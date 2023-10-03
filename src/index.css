@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Handlee&family=Montserrat+Alternates:wght@500&family=Mooli&family=Palanquin:wght@500&family=Unbounded&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 200dvh;
+  background-color: #002233;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("./assets/wave.svg");
+}
+
+html {
+  /* font-family: "Concert One", cursive; */
+  font-family: "Handlee", cursive; /* font-family: "Montserrat Alternates", sans-serif; gross */
+  /* font-family: "Mooli", sans-serif; */
+  /* font-family: "Palanquin", sans-serif; */
+  /* font-family: "Unbounded", sans-serif; */
+}
