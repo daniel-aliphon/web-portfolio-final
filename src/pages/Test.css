@@ -1,0 +1,13 @@
+.text {
+  position: relative;
+  background: linear-gradient(45deg, #40e0d0, #9932cc, #ff1493, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.text::before {
+  content: "Hello World!";
+  color: black;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}

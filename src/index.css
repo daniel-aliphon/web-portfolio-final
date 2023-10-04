@@ -6,18 +6,6 @@
 
 body {
   height: 200dvh;
-  background-color: #002233;
-}
-
-.spacer {
-  aspect-ratio: 960/300;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.layer1 {
-  background-image: url("./assets/wave.svg");
 }
 
 html {
