@@ -3,40 +3,41 @@ import gsap from "gsap";
 
 export const Home = () => {
   //
-  const hero = document.querySelector("[data-hero]");
 
-  const tl = gsap.timeline();
+  window.addEventListener("load", () => {
+    const hero = document.querySelector("[data-hero]");
 
-  tl.to(hero, {
-    "--maskSize1": "35%",
-    duration: 0.2,
-    ease: "back.out(2)",
-  });
+    const tl = gsap.timeline();
 
-  const hanndleMouseMouve = (e: any) => {
-    const { clientX, clientY } = e;
-    const x = Math.round((clientX / window.innerWidth) * 100);
-    const y = Math.round((clientY / window.innerHeight) * 100);
-
-    gsap.to(hero, {
-      "--x": `${x}%`,
-      "--y": `${y}%`,
-      duration: 1.5,
-      ease: "sine.out",
+    tl.to(hero, {
+      "--maskSize1": "35%",
+      duration: 0.2,
+      ease: "back.out(2)",
     });
-  };
+
+    window.addEventListener("mousemove", (e) => {
+      const { clientX, clientY } = e;
+      const x = Math.round((clientX / window.innerWidth) * 100);
+      const y = Math.round((clientY / window.innerHeight) * 100);
+
+      gsap.to(hero, {
+        "--x": `${x}%`,
+        "--y": `${y}%`,
+        duration: 1.5,
+        ease: "sine.out",
+      });
+    });
+  });
 
   ///////////////////////
 
   return (
     <>
-      <div
-        className="relative bg-gray-900"
-        onMouseMove={hanndleMouseMouve}>
+      <div className="relative bg-gray-900">
         <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold gap-11">
           <p className="text-white ">HELLO! MY NAME IS</p>
 
-          <h1 className="font-bold text-transparent text-9xl text">
+          <h1 className="font-semibold text-transparent text-9xl text">
             DANIEL ALIPHON
           </h1>
 
@@ -58,7 +59,7 @@ export const Home = () => {
           <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold gap-11">
             <p className="text-slate-900">HELLO! MY NAME IS</p>
 
-            <h1 className="font-bold text-slate-900 text-9xl">
+            <h1 className="font-semibold text-slate-900 text-9xl">
               DANIEL ALIPHON
             </h1>
 
