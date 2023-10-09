@@ -5,7 +5,14 @@
 @tailwind utilities;
 
 body {
-  height: 200dvh;
+  height: 100dvh;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -14,4 +21,30 @@ html {
   /* font-family: "Mooli", sans-serif; */
   /* font-family: "Palanquin", sans-serif; */
   /* font-family: "Unbounded", sans-serif; */
+}
+.hero--secondary {
+  --mask: radial-gradient(
+    circle at var(--x, 10%) var(--y, 10%),
+    black var(--maskSize1, 0),
+    transparent 0
+  );
+
+  background: linear-gradient(45deg, #40e0d0, #9932cc, #ff1493, orange);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
+
+.haha {
+  background-image: url("./assets/header.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.haha2 {
+  background-image: url("./assets/header2.svg");
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
 }
