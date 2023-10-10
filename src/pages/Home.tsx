@@ -7,7 +7,7 @@ export const Home = () => {
       <Hero />
       <div className="relative z-10">
         <Header />
-        <div className="h-[200vh] bg-slate-100"></div>
+        <div className="h-[200vh] bg-dark-background"></div>
       </div>
     </>
   );

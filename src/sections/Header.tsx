@@ -1,3 +1,4 @@
+import { Sun } from "lucide-react";
 import { navLinks } from "..";
 
 export const Header = () => {
@@ -12,10 +13,15 @@ export const Header = () => {
 
           <div className="flex items-center space-x-2 ">
             {navLinks.map((navLink) => (
-              <button className={`px-3 py-2 bg-white rounded-full`}>
+              <button
+                key={navLink.name}
+                className="px-3 py-2 bg-white rounded-full">
                 <a href={navLink.href}>{navLink.name}</a>
               </button>
             ))}
+            <button className="px-3 h-[48px] py-2 bg-white rounded-full">
+              <Sun />
+            </button>
           </div>
         </div>
       </div>
