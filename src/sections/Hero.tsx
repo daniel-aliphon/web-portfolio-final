@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import { FileSpreadsheet, FolderEdit } from "lucide-react";
 
 export const Hero = () => {
   //
@@ -63,28 +64,24 @@ export const Hero = () => {
         <div
           className="relative text-center bg-dark-background"
           data-hh>
-          {/*  */}
-
           <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold gap-11">
             <p className="text-dark-text/70 ">HELLO! MY NAME IS</p>
-
-            {/* <h1
-              className=" text-transparent text-9xl bg-clip-text
-            bg-[linear-gradient(45deg,orange,#40e0d0,#ff1493,#9932cc)]">
-              DANIEL ALIPHON
-            </h1> */}
 
             <h1 className=" text-9xl text-primary">DANIEL ALIPHON</h1>
 
             <p className="text-dark-text/70">AND THIS IS MY PORTFOLIO</p>
 
             <div className="flex gap-14">
-              <button className="w-40 p-4 text-4xl rounded-full bg-primary">
+              {/*  */}
+
+              <button className="flex items-center gap-2 p-4 text-4xl rounded-full bg-primary">
                 Resume
+                <FileSpreadsheet className="w-8 h-8" />
               </button>
 
-              <button className="box-border w-40 p-4 text-4xl border-4 rounded-full border-primary text-primary">
+              <button className="box-border flex items-center gap-3 p-4 text-4xl border-4 rounded-full border-primary text-primary">
                 Projects
+                <FolderEdit className="w-8 h-8" />
               </button>
             </div>
           </div>
@@ -98,23 +95,19 @@ export const Hero = () => {
             <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold gap-11">
               <p className="text-text ">HELLO! MY NAME IS</p>
 
-              {/* <h1
-              className=" text-transparent text-9xl bg-clip-text
-            bg-[linear-gradient(45deg,orange,#40e0d0,#ff1493,#9932cc)]">
-              DANIEL ALIPHON
-            </h1> */}
-
               <h1 className="text-text text-9xl">DANIEL ALIPHON</h1>
 
               <p className="text-text">AND THIS IS MY PORTFOLIO</p>
 
               <div className="flex gap-14">
-                <button className="w-40 p-4 text-4xl rounded-full text-primary bg-text">
+                <button className="flex items-center gap-2 p-4 text-4xl rounded-full text-primary bg-text">
                   Resume
+                  <FileSpreadsheet className="w-8 h-8" />
                 </button>
 
-                <button className="box-border w-40 p-4 text-4xl border-4 rounded-full border-text text-text">
+                <button className="box-border flex items-center gap-3 p-4 text-4xl border-4 rounded-full border-text text-text">
                   Projects
+                  <FolderEdit className="w-8 h-8" />
                 </button>
               </div>
             </div>
@@ -129,23 +122,19 @@ export const Hero = () => {
             <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold gap-11">
               <p className="text-text ">HELLO! MY NAME IS</p>
 
-              {/* <h1
-              className=" text-transparent text-9xl bg-clip-text
-            bg-[linear-gradient(45deg,orange,#40e0d0,#ff1493,#9932cc)]">
-              DANIEL ALIPHON
-            </h1> */}
-
               <h1 className="text-text text-9xl">DANIEL ALIPHON</h1>
 
               <p className="text-text">AND THIS IS MY PORTFOLIO</p>
 
               <div className="flex gap-14">
-                <button className="w-40 p-4 text-4xl rounded-full text-primary bg-text">
+                <button className="flex items-center gap-2 p-4 text-4xl rounded-full text-primary bg-text">
                   Resume
+                  <FileSpreadsheet className="w-8 h-8" />
                 </button>
 
-                <button className="box-border w-40 p-4 text-4xl border-4 rounded-full border-text text-text">
+                <button className="box-border flex items-center gap-3 p-4 text-4xl border-4 rounded-full border-text text-text">
                   Projects
+                  <FolderEdit className="w-8 h-8" />
                 </button>
               </div>
             </div>
