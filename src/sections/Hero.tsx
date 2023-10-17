@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { FileSpreadsheet, FolderEdit, Scale, Shapes } from "lucide-react";
+import { FileSpreadsheet, FolderEdit } from "lucide-react";
 import { useState } from "react";
 import { FloatingShapes } from "../components/FloatingShapes";
 
