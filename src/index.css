@@ -13,56 +13,47 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
   /* font-family: "Concert One", cursive; */
-  font-family: "Handlee", cursive; /* font-family: "Montserrat Alternates", sans-serif; gross */
+  font-family: "Handlee", cursive;
+  /*font-family: "Montserrat Alternates",sans-serif; */
   /* font-family: "Mooli", sans-serif; */
   /* font-family: "Palanquin", sans-serif; */
   /* font-family: "Unbounded", sans-serif; */
 }
-.outline-text {
-  color: #000000;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
+
+.aliphon {
+  text-shadow: white 5px 0px;
 }
-.hero--secondary {
+.daniel {
+  text-shadow: white -5px 0px;
+}
+.hero-text {
+  text-shadow: #0066ff 2px -2px;
+}
+
+.hero-secondary {
   --mask: radial-gradient(
     circle at var(--x, 10%) var(--y, 10%),
+    rgb(0, 0, 0) var(--maskSize1, 0),
+    transparent 0,
+    transparent var(--maskSize2, 0),
+    black var(--maskSize2, 0),
+    black var(--maskSize3, 0),
+    transparent 0
+  );
+
+  background: linear-gradient(45deg, #6ec3ff, #0066ff, #0066ff, #6ec3ff);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
+.hero-tertiary {
+  --mask: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
     black var(--maskSize1, 0),
     transparent 0
   );
 
-  /* background: linear-gradient(45deg, #53b7ff, #0066ff, #0066ff, #53b7ff); */
-  background: url("./assets/bg.svg");
+  background: linear-gradient(45deg, #6ec3ff, #0066ff, #0066ff, #6ec3ff);
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
-}
-.hero--tertiary {
-  --mask: radial-gradient(
-    circle at var(--x, 10%) var(--y, 10%),
-    black var(--maskSize1, 0),
-    transparent 0
-  );
-
-  /* background: linear-gradient(45deg, #53b7ff, #0066ff, #0066ff, #53b7ff); */
-  background: url("./assets/bg.svg");
-  -webkit-mask-image: var(--mask);
-  mask-image: var(--mask);
-}
-
-.haha {
-  background-image: url("./assets/header.svg");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.haha2 {
-  background-image: url("./assets/header2.svg");
-  width: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-clip: border-box;
 }

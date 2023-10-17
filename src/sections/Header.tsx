@@ -4,7 +4,7 @@ import { navLinks } from "..";
 export const Header = () => {
   return (
     <div className="sticky bg-transparent -top-8">
-      <div className=" haha2 h-[30px]"></div>
+      <div className=" w-full bg-cover bg-no-repeat bg-[url('./assets/header2.svg')] bg-top h-[30px]"></div>
       <div className=" bg-[#0066FF]">
         <div className="box-border flex items-center justify-between p-2 pb-0 mx-auto text-2xl max-w-7xl">
           <h1 className="text-5xl font-semibold tracking-wider text-white">
@@ -25,7 +25,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <div className="haha absolute h-[31px]"></div>
+      <div className="haha bg-no-repeat bg-cover bg-[url('./assets/header.svg')] w-full absolute h-[31px]"></div>
     </div>
   );
 };
