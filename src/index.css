@@ -6,7 +6,16 @@
 
 body {
   height: 100dvh;
-  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 260px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 * {
