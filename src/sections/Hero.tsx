@@ -6,7 +6,7 @@ import { ToggleSpotlightCursor } from "../components/ToggleSpotlightCursor";
 
 export const Hero = () => {
   ////////////////////
-  const [spotlightVisible, setSpotlight] = useState(true);
+  const [spotlightVisible, setSpotlight] = useState(false);
 
   window.addEventListener("load", () => {
     const hero = document.querySelector("[data-hero]");
@@ -105,18 +105,19 @@ export const Hero = () => {
                 Resume
                 <FileSpreadsheet className="w-8 h-8" />
               </button>
-
-              <button
-                onMouseEnter={() => setHoverState2(true)}
-                onMouseLeave={() => setHoverState2(false)}
-                className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-primary text-primary ${
-                  isHovered2
-                    ? "scale-105 max-sm:scale-[0.70]"
-                    : "scale-100 max-sm:scale-[0.65]"
-                }`}>
-                Projects
-                <FolderEdit className="w-8 h-8" />
-              </button>
+              <a href="#Projects">
+                <button
+                  onMouseEnter={() => setHoverState2(true)}
+                  onMouseLeave={() => setHoverState2(false)}
+                  className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-primary text-primary ${
+                    isHovered2
+                      ? "scale-105 max-sm:scale-[0.70]"
+                      : "scale-100 max-sm:scale-[0.65]"
+                  }`}>
+                  Projects
+                  <FolderEdit className="w-8 h-8" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -124,7 +125,7 @@ export const Hero = () => {
 
           <div
             className={`absolute ${
-              spotlightVisible ? "" : "hidden"
+              spotlightVisible ? "" : "hiddenn"
             } top-0 left-0 w-full h-full font-semibold hero-secondary`}
             aria-hidden="true"
             data-hero>
@@ -151,18 +152,19 @@ export const Hero = () => {
                   Resume
                   <FileSpreadsheet className="w-8 h-8" />
                 </button>
-
-                <button
-                  onMouseEnter={() => setHoverState2(true)}
-                  onMouseLeave={() => setHoverState2(false)}
-                  className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-dark-background text-text ${
-                    isHovered2
-                      ? "scale-105 max-sm:scale-[0.70]"
-                      : "scale-100 max-sm:scale-[0.65]"
-                  }`}>
-                  Projects
-                  <FolderEdit className="w-8 h-8" />
-                </button>
+                <a href="#Projects">
+                  <button
+                    onMouseEnter={() => setHoverState2(true)}
+                    onMouseLeave={() => setHoverState2(false)}
+                    className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-dark-background text-text ${
+                      isHovered2
+                        ? "scale-105 max-sm:scale-[0.70]"
+                        : "scale-100 max-sm:scale-[0.65]"
+                    }`}>
+                    Projects
+                    <FolderEdit className="w-8 h-8" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -171,7 +173,7 @@ export const Hero = () => {
 
           <div
             className={`absolute ${
-              spotlightVisible ? "" : "hidden"
+              spotlightVisible ? "" : "hiddenn"
             } top-0 left-0 w-full h-full font-semibold hero-tertiary`}
             aria-hidden="true"
             data-hero2>
@@ -198,18 +200,19 @@ export const Hero = () => {
                   Resume
                   <FileSpreadsheet className="w-8 h-8" />
                 </button>
-
-                <button
-                  onMouseEnter={() => setHoverState2(true)}
-                  onMouseLeave={() => setHoverState2(false)}
-                  className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-dark-background text-text ${
-                    isHovered2
-                      ? "scale-105 max-sm:scale-[0.70]"
-                      : "scale-100 max-sm:scale-[0.65]"
-                  }`}>
-                  Projects
-                  <FolderEdit className="w-8 h-8" />
-                </button>
+                <a href="#Projects">
+                  <button
+                    onMouseEnter={() => setHoverState2(true)}
+                    onMouseLeave={() => setHoverState2(false)}
+                    className={`box-border leading-tight flex items-center gap-3 p-4 text-4xl border-4 bg-transparent rounded-full transition-all border-dark-background text-text ${
+                      isHovered2
+                        ? "scale-105 max-sm:scale-[0.70]"
+                        : "scale-100 max-sm:scale-[0.65]"
+                    }`}>
+                    Projects
+                    <FolderEdit className="w-8 h-8" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>

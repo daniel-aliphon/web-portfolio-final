@@ -30,6 +30,14 @@ body::-webkit-scrollbar {
   /* font-family: "Unbounded", sans-serif; */
 }
 
+.hiddenn {
+  visibility: hidden;
+}
+
+.bgg:hover .circlee {
+  transform: translate(9.5px, 9.5px);
+}
+
 .aliphon {
   text-shadow: white 5px 0px;
 }
