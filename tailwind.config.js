@@ -5,6 +5,7 @@ export default {
     extend: {
       animationDelay: {
         8500: "8500ms",
+        10000: "10000ms",
         11000: "11000ms",
         12000: "12000ms",
         13000: "13000ms",
@@ -17,6 +18,7 @@ export default {
         18000: "18000ms",
         19000: "19000ms",
         20000: "20000ms",
+        20500: "20500ms",
         21000: "21000ms",
         22000: "22000ms",
         23000: "23000ms",
@@ -26,11 +28,13 @@ export default {
       colors: {
         text: "#010d13",
         background: "#e7f7fe",
+        foreground: "NULL",
         primary: "#0066FF",
         secondary: "#c7affd",
         accent: "#4606db",
         "dark-text": "#ecf8fe",
         "dark-background": "#011118",
+        "dark-foreground": " #111827",
         "dark-primary": "#052fd6",
         "dark-secondary": "#190250",
         "dark-accent": "#6424f9",
@@ -43,7 +47,7 @@ export default {
             opacity: "1",
           },
           "100%": {
-            transform: "translateY(-120vh) rotate(0deg)",
+            transform: "translateY(-120vh) rotate(720deg)",
             opacity: "0",
           },
         },
@@ -54,7 +58,7 @@ export default {
             opacity: "1",
           },
           "100%": {
-            transform: "translateY(-120vh) rotate(-0deg)",
+            transform: "translateY(-120vh) rotate(-720deg)",
             opacity: "0",
           },
         },

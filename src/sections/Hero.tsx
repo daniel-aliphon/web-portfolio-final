@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { ArrowDown, FileSpreadsheet, FolderEdit } from "lucide-react";
 import { useState } from "react";
-import { FloatingShapes } from "../components/FloatingShapes";
+import { FloatingIcons } from "../components/FloatingIcons";
 import { ToggleSpotlightCursor } from "../components/ToggleSpotlightCursor";
 
 export const Hero = () => {
@@ -77,14 +77,14 @@ export const Hero = () => {
     <>
       <div className="fixed z-10 w-screen">
         <div
-          className="relative text-center bg-dark-background"
+          className="relative text-center bgbg bg-dark-background"
           data-hh>
           <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold max-sm:text-xl gap-11">
-            <FloatingShapes color={"bg-primary"} />
+            <FloatingIcons />
 
             <div className="flex flex-col scale-100 max-sm:gap-1 gap-11 ">
               <p className="hero-text text-dark-text">HELLO! MY NAME IS</p>
-              <h1 className="max-sm:text-7xl text-9xl hg text-primary">
+              <h1 className="max-sm:text-7xl text-[10rem] hg text-primary">
                 <span className="daniel"> DANIEL </span>
                 <span className=" aliphon">ALIPHON</span>
               </h1>
@@ -93,7 +93,7 @@ export const Hero = () => {
               </p>
             </div>
 
-            <div className="flex justify-center gap-28 max-sm:gap-0">
+            <div className="flex justify-center gap-28 max-sm:flex-col max-sm:gap-0">
               <button
                 onMouseEnter={() => setHoverState(true)}
                 onMouseLeave={() => setHoverState(false)}
@@ -130,17 +130,17 @@ export const Hero = () => {
             aria-hidden="true"
             data-hero>
             <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold max-sm:text-xl gap-11">
-              <FloatingShapes color={"bg-dark-background"} />
+              <FloatingIcons />
 
               <div className="flex flex-col scale-100 max-sm:gap-1 gap-11 ">
                 <p className="hero-text text-text">HELLO! MY NAME IS</p>
-                <h1 className="max-sm:text-7xl text-9xl hg text-text">
+                <h1 className="max-sm:text-7xl text-[10rem] hg text-text">
                   DANIEL ALIPHON
                 </h1>
                 <p className="hero-text text-text">AND THIS IS MY PORTFOLIO</p>
               </div>
 
-              <div className="flex justify-center max-sm:gap-0 gap-28 ">
+              <div className="flex justify-center max-sm:flex-col max-sm:gap-0 gap-28 ">
                 <button
                   onMouseEnter={() => setHoverState(true)}
                   onMouseLeave={() => setHoverState(false)}
@@ -178,17 +178,17 @@ export const Hero = () => {
             aria-hidden="true"
             data-hero2>
             <div className="flex flex-col items-center justify-center h-screen text-5xl font-semibold max-sm:text-xl gap-11">
-              <FloatingShapes color={"bg-dark-background"} />
+              <FloatingIcons />
 
               <div className="flex flex-col scale-100 max-sm:gap-1 gap-11 ">
                 <p className="hero-text text-text">HELLO! MY NAME IS</p>
-                <h1 className="max-sm:text-7xl text-9xl hg text-text">
+                <h1 className="max-sm:text-7xl text-[10rem] hg text-text">
                   DANIEL ALIPHON
                 </h1>
                 <p className="hero-text text-text">AND THIS IS MY PORTFOLIO</p>
               </div>
 
-              <div className="flex justify-center max-sm:gap-0 gap-28 ">
+              <div className="flex justify-center max-sm:flex-col max-sm:gap-0 gap-28 ">
                 <button
                   onMouseEnter={() => setHoverState(true)}
                   onMouseLeave={() => setHoverState(false)}
@@ -217,7 +217,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute flex flex-col space-y-1 bottom-5 right-5">
+        <div className="absolute flex flex-col space-y-1 max-sm:flex-row bottom-5 right-5">
           <button
             onClick={() => {
               setSpotlight(!spotlightVisible);

@@ -3,9 +3,9 @@ import { navLinks } from "..";
 
 export const Header = () => {
   return (
-    <div className="sticky top-0 mb-5">
-      <div className=" bg-[#0066FF]">
-        <div className="box-border flex items-center justify-between w-full p-2 mx-auto max-w-7xl">
+    <div className="sticky top-0 z-50 mb-5">
+      <div className="bg-[#0066FF]">
+        <div className="mx-auto box-border flex w-full max-w-7xl items-center justify-between p-2">
           {/*  */}
 
           <h1 className="text-3xl font-semibold tracking-wider text-dark-text">
@@ -13,15 +13,15 @@ export const Header = () => {
           </h1>
           <Menu
             size={28}
-            className="md:hidden hover:cursor-pointer text-dark-text/70 hover:text-dark-text"
+            className="text-dark-text/70 hover:cursor-pointer hover:text-dark-text md:hidden"
           />
 
-          <div className="flex items-center space-x-3 text-sm font-semibold max-md:hidden ">
+          <div className="flex items-center space-x-3 text-sm font-semibold max-md:hidden">
             {navLinks.map((navLink) => (
               <a
                 key={navLink.name}
                 href={navLink.href}>
-                <button className="px-3 py-2 tracking-widest border-b-4 hover:text-dark-text hover:border-b-dark-text text-dark-text/70 border-dark-text/70 bg-primary ">
+                <button className="border-b-4 border-dark-text/70 bg-primary px-3 py-2 tracking-widest text-dark-text/70 hover:border-b-dark-text hover:text-dark-text">
                   {navLink.name}
                 </button>
               </a>
@@ -34,11 +34,11 @@ export const Header = () => {
         </div>
       </div>
 
-      <div className=" bg-[url('./assets/header-bottom-wave.svg')] bg-no-repeat bg-cover w-full h-[30px] bg-transparent"></div>
+      <div className="h-[30px] w-full bg-transparent bg-[url('./assets/header-bottom-wave.svg')] bg-cover bg-no-repeat"></div>
     </div>
   );
 };
 
 {
-  /* <div className=" w-full bg-cover bg-no-repeat bg-[url('./assets/header-top-wave.svg')] bg-top h-[30px]"></div> */
+  /* <div className="h-[30px] w-full bg-[url('./assets/header-top-wave.svg')] bg-cover bg-top bg-no-repeat"></div> */
 }

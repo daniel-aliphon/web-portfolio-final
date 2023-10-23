@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Handlee&family=Montserrat+Alternates:wght@500&family=Mooli&family=Palanquin:wght@500&family=Unbounded&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Handlee&family=Montserrat+Alternates:wght@800&family=Mooli&family=Palanquin:wght@500&family=Unbounded&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,22 +18,28 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+@layer base {
+  html {
+    font-family: "Mooli", sans-serif;
+    font-family: "Handlee", cursive;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: "Concert One", cursive; */
-  font-family: "Handlee", cursive;
-  /*font-family: "Montserrat Alternates",sans-serif; */
-  /* font-family: "Mooli", sans-serif; */
-  /* font-family: "Palanquin", sans-serif; */
-  /* font-family: "Unbounded", sans-serif; */
 }
 
 .hiddenn {
   visibility: hidden;
 }
 
+.hd {
+  shape-outside: circle(50%);
+}
+.hdd {
+  shape-margin: 10000px;
+}
 .bgg:hover .circlee {
   transform: translate(9.5px, 9.5px);
 }

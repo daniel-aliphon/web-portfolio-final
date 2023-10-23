@@ -1,4 +1,3 @@
-import "./Test.css";
 import {
   bootstrapIcon,
   cssIcon,
@@ -16,9 +15,10 @@ import {
   vsCodeIcon,
   chromeDevToolsIcon,
 } from "../assets";
-//
-export const Test = () => {
-  const skills = [
+
+export const FloatingIcons = () => {
+  // Rest of the code...
+  const iconsRow1 = [
     {
       name: "html",
       icon: htmlIcon,
@@ -174,17 +174,15 @@ export const Test = () => {
     },
   ];
   return (
-    <>
-      <div className="outline outline-1">
-        <div className="griddy w-[80rem]">
-          {skills.map((icon) => (
-            <img
-              src={icon.icon}
-              className="h-32 w-32 outline outline-1"
-            />
-          ))}
-        </div>
-      </div>
-    </>
+    <div>
+      {iconsRow1.map((icon) => (
+        <img
+          key={icon.name}
+          src={icon.icon}
+          alt={icon.name}
+          className={`max-md:hidden absolute -bottom-[15vw] ${icon.animation} ${icon.animationDelay} ${icon.width} ${icon.height} ${icon.left}`}
+        />
+      ))}
+    </div>
   );
 };

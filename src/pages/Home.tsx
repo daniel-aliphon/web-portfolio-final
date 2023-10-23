@@ -2,11 +2,12 @@ import { ArrowUp } from "lucide-react";
 import { Header } from "../components/Header";
 import { Hero } from "../sections/Hero";
 import { useState } from "react";
+import { About } from "../sections/About";
+import { TechIcons } from "../sections/TechIcons";
 
 export const Home = () => {
   //
 
-  // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = () => {
     scrollFunction();
   };
@@ -33,7 +34,7 @@ export const Home = () => {
       <Hero />
       <div className="relative z-10 bg-dark-background">
         <Header />
-        <div className={`sticky h-16 flex justify-end top-28 `}>
+        <div className={`sticky top-28 flex h-16 justify-end`}>
           <button
             onClick={() => topFunction()}
             className={`grid w-16 h-16 rounded-full text-primary place-content-center ${
@@ -43,69 +44,10 @@ export const Home = () => {
           </button>
         </div>
 
-        <div className="mx-auto mt-32 space-y-48 text-white max-w-7xl">
-          <div id="AboutMe">
-            <h1 className="text-5xl">About Me</h1>
+        <div className="mx-auto mt-32 max-w-7xl space-y-48 overflow-x-hidden p-6 text-white max-md:p-4 max-sm:p-2">
+          <About />
 
-            <p className="text-xl leading-relaxed ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-            </p>
-          </div>
-
-          <div id="Skills">
-            <h1 className="text-5xl">Tech/Skills</h1>
-            <p className="text-xl leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-            </p>
-          </div>
+          <TechIcons />
 
           <div id="Projects">
             <h1 className="text-5xl">Projects</h1>
