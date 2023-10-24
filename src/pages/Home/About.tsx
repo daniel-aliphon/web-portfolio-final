@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { profilePicture } from "../../assets/images";
 
 export const About = () => {
   const [ReadMoreState, setReadMoreState] = useState(false);
   return (
     <div id="AboutMe">
-      <h1 className="mb-5 text-6xl font-semibold text-primary max-md:text-5xl max-sm:text-4xl">
-        <span className="inline-block text-dark-text">About</span> Me
+      <h1 className="mb-7 text-6xl font-semibold text-dark-text max-md:text-5xl max-sm:text-4xl">
+        About<span className="text-primary"> Me </span>
       </h1>
 
-      <div className="">
+      <div>
         <img
-          className="hdd float-left mr-4 h-[300px] rounded-md border-4 border-primary max-sm:h-[200px]"
-          src="src\assets\pfp.jpg"
+          className="float-left mb-0 mr-4 mt-3 h-[300px] rounded-md border-4 border-primary max-sm:h-[200px]"
+          src={profilePicture}
         />
         <p className="text-[1.875rem] max-md:text-2xl max-md:leading-9 max-sm:text-xl">
           Im <span className="font-bold text-primary">Daniel</span>, a{" "}

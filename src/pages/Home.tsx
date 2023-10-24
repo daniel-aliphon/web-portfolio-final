@@ -1,9 +1,9 @@
 import { ArrowUp } from "lucide-react";
 import { Header } from "../components/Header";
-import { Hero } from "../sections/Hero";
+import { Hero } from "./Home/Hero";
 import { useState } from "react";
-import { About } from "../sections/About";
-import { TechIcons } from "../sections/TechIcons";
+import { About } from "./Home/About";
+import { TechIcons } from "./Home/Tech";
 
 export const Home = () => {
   //
@@ -24,27 +24,31 @@ export const Home = () => {
       setBtnVisibility(false);
     }
   }
-  //s
+
+  //
+
   function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
+
+  //
+
   return (
     <>
       <Hero />
       <div className="relative z-10 bg-dark-background">
         <Header />
-        <div className={`sticky top-28 flex h-16 justify-end`}>
-          <button
-            onClick={() => topFunction()}
-            className={`grid w-16 h-16 rounded-full text-primary place-content-center ${
-              btnVisibility ? "" : " hidden"
-            }`}>
-            <ArrowUp size={50} />
-          </button>
-        </div>
 
-        <div className="mx-auto mt-32 max-w-7xl space-y-48 overflow-x-hidden p-6 text-white max-md:p-4 max-sm:p-2">
+        <button
+          onClick={() => topFunction()}
+          className={`grid sticky top-28 left-[95%] w-16 h-16 rounded-full text-primary place-content-center ${
+            btnVisibility ? "" : " invisible"
+          }`}>
+          <ArrowUp size={50} />
+        </button>
+
+        <div className="mx-auto mt-32 max-w-7xl space-y-48 p-6 text-white max-md:overflow-x-hidden max-md:p-4 max-sm:p-2">
           <About />
 
           <TechIcons />

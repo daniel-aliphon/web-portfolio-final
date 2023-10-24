@@ -14,7 +14,7 @@ import {
   viteIcon,
   vsCodeIcon,
   chromeDevToolsIcon,
-} from "../assets";
+} from "../../assets/icons";
 //
 export const TechIcons = () => {
   const icons = [
@@ -102,7 +102,7 @@ export const TechIcons = () => {
   return (
     <>
       <div className="">
-        <h1 className="mb-10 text-6xl font-bold text-primary max-md:text-5xl max-sm:text-4xl">
+        <h1 className="mb-7 text-6xl font-bold text-primary max-md:text-5xl max-sm:text-4xl">
           <span className="text-dark-text">My</span> Tech
         </h1>
 
