@@ -21,6 +21,12 @@ html::-webkit-scrollbar {
   padding: 0;
 }
 
+@media (min-width: 640px) and (max-width: 768px) {
+  .grid-area {
+    grid-area: 2/ 1/ 2 / 3;
+  }
+}
+
 .hero-secondary {
   --mask: radial-gradient(
     circle at var(--x, 10%) var(--y, 10%),
@@ -36,6 +42,7 @@ html::-webkit-scrollbar {
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
 }
+
 .hero-tertiary {
   --mask: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),

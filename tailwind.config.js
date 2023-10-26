@@ -3,6 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: "641px",
+
+        md: "769px",
+
+        lg: "1025px",
+
+        xl: "1281px",
+      },
+
       fontFamily: {
         primary: ["Playpen Sans", "cursive"],
         secondary: ["Tilt Neon", "sans-serif"],
