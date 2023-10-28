@@ -1,7 +1,7 @@
 export const navLinks = [
   {
-    href: "#AboutMe",
-    name: "AboutMe",
+    href: "#About",
+    name: "About",
     alt: "About Me Nav Link",
   },
   {

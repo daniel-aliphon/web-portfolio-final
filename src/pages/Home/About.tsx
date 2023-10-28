@@ -4,7 +4,7 @@ import { profilePicture } from "../../assets/images";
 export const About = () => {
   const [ReadMoreState, setReadMoreState] = useState(false);
   return (
-    <div id="AboutMe">
+    <div id="About">
       <h1 className="mb-7 text-6xl font-semibold text-dark-text max-md:text-5xl max-sm:text-4xl">
         About<span className="text-primary"> Me </span>
       </h1>
@@ -21,7 +21,7 @@ export const About = () => {
           based in South Africa. I am passionate about crafting digital
           experiences that captivate and engage users. With a strong foundation
           in HTML, CSS, and JavaScript, I possess the technical skills needed to
-          bring websites to life.{" "}
+          bring websites to life.
           <span className={ReadMoreState ? "" : "max-sm:hidden"}>
             I thrive on the challenge of turning creative ideas into functional,
             user-friendly websites and enjoy staying up-to-date with the latest
@@ -31,7 +31,7 @@ export const About = () => {
             collaborate with teams, learn new skills, and contribute to building
             innovative online solutions that leave a lasting impression.
           </span>
-        </p>{" "}
+        </p>
         <div
           onClick={() => setReadMoreState(!ReadMoreState)}
           className="inline-block text-[1.875rem] text-primary hover:cursor-pointer max-md:text-2xl max-md:leading-9 max-sm:text-xl sm:hidden">

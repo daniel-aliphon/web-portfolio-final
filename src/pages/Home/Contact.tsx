@@ -1,20 +1,14 @@
+import { Heading } from "../../components/Heading";
+import { Text } from "../../components/Text";
+
 export const Contact = () => {
   return (
     <div
       id="Contact"
       className="flex gap-16 rounded-lg">
-      <div className="h-full w-[40%] rounded-lg text-dark-text">
-        <h1 className="text-6xl font-bold text-primary max-md:text-5xl max-sm:text-4xl">
-          Contact Me
-        </h1>
-
-        <p>Contact Information:</p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-          similique eaque labore cumque, vero magnam velit excepturi aliquam cum
-          ipsa numquam. Eum pariatur soluta eligendi nisi eaque laboriosam
-          itaque quidem?
-        </p>
+      <div className="flex w-[40%] flex-col gap-5 rounded-lg text-dark-text">
+        <Heading>Contact Me</Heading>
+        <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Text>
       </div>
       <div className="flex h-full w-full flex-col gap-3">
         <div className="grid grid-cols-2 gap-3">

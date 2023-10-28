@@ -1,0 +1,24 @@
+---UI---
+
+hero cursor effect
+hero buttons scaling 
+hero responsiveness?
+typography
+text sizing
+overall size trend
+tech section responsiveness/remake
+projects section max-md: responsiveness
+projects section imgs
+projects spacing
+footer do-over 
+header do-over
+tooltip component
+text component
+button component
+background decor?
+professionalise?
+color theme***
+
+--------
+
+
