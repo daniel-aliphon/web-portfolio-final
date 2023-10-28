@@ -6,6 +6,7 @@ import { About } from "./Home/About";
 import { TechIcons } from "./Home/Tech";
 import { Footer } from "./Home/Footer";
 import { Projects } from "./Home/Projects";
+import { Contact } from "./Home/Contact";
 
 export const Home = () => {
   //
@@ -57,36 +58,7 @@ export const Home = () => {
 
           <Projects />
 
-          <div id="Contact">
-            <h1 className="text-5xl">Contect Me</h1>
-            <p className="text-xl leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              veritatis magnam asperiores consequatur nam repellat doloremque
-              cupiditate vitae, sed voluptas sint. Numquam, amet et in
-              consequatur accusantium est distinctio reprehenderit quas, dolore
-              veniam repudiandae vitae, quos sint similique commodi doloremque.
-            </p>
-          </div>
+          <Contact />
         </div>
         <Footer />
       </div>
