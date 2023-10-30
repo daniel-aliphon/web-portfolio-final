@@ -235,7 +235,7 @@ export const Hero = () => {
             <ToggleSpotlightCursor />
           </button>
 
-          <a href="#AboutMe">
+          <a href="#About">
             <button className="grid h-16 w-16 place-content-center rounded-full bg-dark-background/70 text-primary">
               <ArrowDown size={50} />
             </button>

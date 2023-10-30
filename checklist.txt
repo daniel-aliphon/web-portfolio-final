@@ -2,6 +2,7 @@
 
 hero cursor effect
 hero buttons scaling 
+hero buttons outlline??
 hero responsiveness?
 typography
 text sizing

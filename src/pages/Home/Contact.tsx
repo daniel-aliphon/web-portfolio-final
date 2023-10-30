@@ -44,7 +44,7 @@ export const Contact = () => {
           cols={30}
           rows={10}></textarea>
         <input
-          className="w-fit rounded-lg border-2 border-primary px-4 py-2 text-primary"
+          className="box-border w-fit rounded-lg border-2 border-primary px-5 py-2 text-primary duration-300 hover:cursor-pointer hover:bg-primary hover:text-dark-text"
           type="submit"
         />
       </div>

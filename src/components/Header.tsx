@@ -1,5 +1,6 @@
 import { Menu, Sun } from "lucide-react";
 import { navLinks } from "../main";
+import { MenuBtn } from "./MenuBtn";
 
 export const Header = () => {
   return (
@@ -9,10 +10,7 @@ export const Header = () => {
           <h1 className="text-3xl font-semibold tracking-wider text-dark-text">
             Daniel Aliphon
           </h1>
-          <Menu
-            size={28}
-            className="text-dark-text/70 hover:cursor-pointer hover:text-dark-text md:hidden"
-          />
+          <MenuBtn />
 
           <div className="flex items-center space-x-3 font-semibold max-md:hidden">
             {navLinks.map((navLink) => (

@@ -14,7 +14,26 @@ import figmaIcon from "./figma.svg";
 import vsCodeIcon from "./vs-code.svg";
 import chromeDevToolsIcon from "./chromeDevTools.svg";
 
+const icons = {
+  bootstrapIcon,
+  cssIcon,
+  gitIcon,
+  htmlIcon,
+  githubIcon,
+  javascriptIcon,
+  nodeIcon,
+  npmIcon,
+  tailwindIcon,
+  reactIcon,
+  typescriptIcon,
+  viteIcon,
+  figmaIcon,
+  vsCodeIcon,
+  chromeDevToolsIcon,
+};
+
 export {
+  icons,
   bootstrapIcon,
   cssIcon,
   gitIcon,

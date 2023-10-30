@@ -15,6 +15,7 @@ import {
   vsCodeIcon,
   chromeDevToolsIcon,
 } from "../../assets/icons";
+import { Tooltip } from "../../components/Tooltip";
 //
 export const TechIcons = () => {
   const icons = [
@@ -108,18 +109,20 @@ export const TechIcons = () => {
 
         <div className="maxlg grid grid-cols-5 gap-[5vw] max-sm:grid-cols-3">
           {icons.map((icon) => (
-            <div
-              placeholder={icon.description}
+            <Tooltip
+              aboveValue="120%"
               key={icon.name}
-              className="relative grid place-items-center rounded-lg bg-dark-foreground shadow-xl transition-all before:absolute before:bottom-[90%] before:left-1/2 before:z-10 before:-translate-x-1/2 before:whitespace-nowrap before:rounded-lg before:bg-[#00000090] before:px-3 before:py-2 before:opacity-0 before:duration-700 before:content-[attr(placeholder)] hover:shadow-background/5 hover:before:opacity-100">
+              tooltipText={icon.description}>
               <img
                 className="rounded-lg transition-all duration-300 hover:scale-125"
                 src={icon.icon}
               />
-            </div>
+            </Tooltip>
           ))}
         </div>
       </div>
     </>
   );
 };
+
+// className="group/icon relative grid place-items-center rounded-lg bg-dark-foreground shadow-xl transition-all before:absolute before:bottom-[90%] before:left-1/2 before:z-10 before:-translate-x-1/2 before:whitespace-nowrap before:rounded-lg before:bg-[#00000090] before:px-3 before:py-2 before:opacity-0 before:duration-700 before:content-[attr(placeholder)] hover:shadow-background/5 hover:before:opacity-100"

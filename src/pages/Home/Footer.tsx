@@ -49,7 +49,7 @@ export const Footer = () => {
                 South Africa, Kwa-Zulu Natal
               </p>
               <div className="invisible cursor-pointer group-hover:visible max-md:hidden">
-                <CopyBtn text="South Africa, Kwa-Zulu Natal" />
+                <CopyBtn copyText="South Africa, Kwa-Zulu Natal" />
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export const Footer = () => {
                 +27 71 098 8863
               </p>
               <div className="invisible cursor-pointer group-hover:visible max-md:hidden">
-                <CopyBtn text="+27 71 098 8863" />
+                <CopyBtn copyText="+27 71 098 8863" />
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export const Footer = () => {
                 daniel.aliphon.juan@gmail.com
               </a>
               <div className="invisible cursor-pointer group-hover:visible max-md:hidden">
-                <CopyBtn text="daniel.aliphon.juan@gmail.com" />
+                <CopyBtn copyText="daniel.aliphon.juan@gmail.com" />
               </div>
             </div>
           </div>
