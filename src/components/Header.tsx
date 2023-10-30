@@ -1,4 +1,4 @@
-import { Menu, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { navLinks } from "../main";
 import { MenuBtn } from "./MenuBtn";
 
