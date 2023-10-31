@@ -7,10 +7,13 @@ export const Contact = () => {
       id="Contact"
       className="flex gap-16 rounded-lg">
       <div className="flex w-[40%] flex-col gap-5 rounded-lg text-dark-text">
-        <Heading>Contact Me</Heading>
+        <Heading>
+          Contact <span className="text-dark-text">Me</span>{" "}
+        </Heading>
         <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</Text>
       </div>
-      <div className="flex h-full w-full flex-col gap-3">
+
+      <div className="flex h-full w-full flex-col gap-3 text-lg">
         <div className="grid grid-cols-2 gap-3">
           <input
             className="rounded-lg bg-dark-foreground p-2"
@@ -35,8 +38,9 @@ export const Contact = () => {
             type="text"
             name="Phone"
             placeholder="Phone"
-          />
+          />{" "}
         </div>
+
         <textarea
           className="w-full rounded-lg bg-dark-foreground p-2"
           name="Message"

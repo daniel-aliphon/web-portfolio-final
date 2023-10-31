@@ -1,128 +1,28 @@
-import {
-  bootstrapIcon,
-  cssIcon,
-  figmaIcon,
-  gitIcon,
-  githubIcon,
-  htmlIcon,
-  javascriptIcon,
-  nodeIcon,
-  npmIcon,
-  reactIcon,
-  tailwindIcon,
-  typescriptIcon,
-  viteIcon,
-  vsCodeIcon,
-  chromeDevToolsIcon,
-} from "../../assets/icons";
-import { Tooltip } from "../../components/Tooltip";
-//
-export const TechIcons = () => {
-  const icons = [
-    {
-      name: "html",
-      icon: htmlIcon,
-      description: "HTML5",
-    },
-    {
-      name: "css3",
-      icon: cssIcon,
-      description: "CSS3",
-    },
-
-    {
-      name: "javascript",
-      icon: javascriptIcon,
-      description: "JAVASCRIPT",
-    },
-
-    {
-      name: "typescript",
-      icon: typescriptIcon,
-      description: "TYPESCRIPT",
-    },
-
-    {
-      name: "react",
-      icon: reactIcon,
-      description: "REACT",
-    },
-    {
-      name: "figma",
-      icon: figmaIcon,
-      description: "FIGMA",
-    },
-    {
-      name: "tailwind",
-      icon: tailwindIcon,
-      description: "TAILWIND-CSS",
-    },
-    {
-      name: "bootstrap",
-      icon: bootstrapIcon,
-      description: "BOOTSTRAP",
-    },
-
-    {
-      name: "chrome-dev-tools",
-      icon: chromeDevToolsIcon,
-      description: "CHROME DEV TOOLS",
-    },
-    {
-      name: "vitejs",
-      icon: viteIcon,
-      description: "VITE",
-    },
-    {
-      name: "vs-code",
-      icon: vsCodeIcon,
-      description: "VISUAL STUDIO CODE",
-    },
-    {
-      name: "git",
-      icon: gitIcon,
-      description: "GIT-VERSION CONTROL",
-    },
-    {
-      name: "github",
-      icon: githubIcon,
-      description: "GITHUB",
-    },
-    {
-      name: "node",
-      icon: nodeIcon,
-      description: "NODE.JS",
-    },
-
-    {
-      name: "npm",
-      icon: npmIcon,
-      description: "NODE PACKAGE MANAGER",
-    },
-  ];
+import { Heading } from "../../components/Heading";
+import { techIcons } from "../../main"; //
+export const Tech = () => {
   return (
     <>
       <div>
-        <h1 className="mb-12 text-6xl font-bold text-primary max-md:text-5xl max-sm:text-4xl">
-          Tech
-        </h1>
+        <Heading>Tech</Heading>
 
         <div className="maxlg grid grid-cols-5 gap-[5vw] max-sm:grid-cols-3">
-          {icons.map((icon) => (
-            <Tooltip
-              aboveValue="120%"
+          {techIcons.map((icon) => (
+            <div
               key={icon.name}
-              tooltipText={icon.description}>
+              className="group/tooltip relative grid place-items-center">
+              <span
+                className={`invisible absolute -bottom-7 left-2/4 z-[1] ml-[-75px] w-[140px] rounded-md bg-[#00000090] p-[5px] text-center text-white opacity-0 transition-opacity duration-[0.3s] group-hover/tooltip:visible group-hover/tooltip:opacity-100`}>
+                {icon.description}
+              </span>
               <img
                 className="rounded-lg transition-all duration-300 hover:scale-125"
                 src={icon.icon}
               />
-            </Tooltip>
+            </div>
           ))}
         </div>
       </div>
     </>
   );
 };
-
-// className="group/icon relative grid place-items-center rounded-lg bg-dark-foreground shadow-xl transition-all before:absolute before:bottom-[90%] before:left-1/2 before:z-10 before:-translate-x-1/2 before:whitespace-nowrap before:rounded-lg before:bg-[#00000090] before:px-3 before:py-2 before:opacity-0 before:duration-700 before:content-[attr(placeholder)] hover:shadow-background/5 hover:before:opacity-100"

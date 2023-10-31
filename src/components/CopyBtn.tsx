@@ -13,9 +13,7 @@ export const CopyBtn = ({ copyText }: { copyText: string }) => {
   //
   return (
     <>
-      <Tooltip
-        aboveValue="150%"
-        tooltipText={tooltipText}>
+      <Tooltip tooltipText={tooltipText}>
         <Copy
           onClick={() => {
             copy();

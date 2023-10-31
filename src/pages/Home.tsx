@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { Hero } from "./Home/Hero";
 import { useState } from "react";
 import { About } from "./Home/About";
-import { TechIcons } from "./Home/Tech";
+import { Tech } from "./Home/Tech";
 import { Footer } from "./Home/Footer";
 import { Projects } from "./Home/Projects";
 import { Contact } from "./Home/Contact";
@@ -45,7 +45,7 @@ export const Home = () => {
 
         <button
           onClick={() => topFunction()}
-          className={`grid sticky top-28 left-[95%] w-16 h-16 rounded-full text-primary place-content-center ${
+          className={`grid sticky top-28 left-[95%] max-md:invisible w-16 h-16 rounded-full text-primary place-content-center ${
             btnVisibility ? "" : " invisible"
           }`}>
           <ArrowUp size={50} />
@@ -54,12 +54,13 @@ export const Home = () => {
         <div className="mx-auto mt-32 max-w-7xl space-y-48 overflow-x-hidden p-6 text-white max-md:p-4 max-sm:p-2">
           <About />
 
-          <TechIcons />
+          <Tech />
 
           <Projects />
 
           <Contact />
         </div>
+
         <Footer />
       </div>
     </>

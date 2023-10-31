@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { profilePicture } from "../../assets/images";
+import { Heading } from "../../components/Heading";
+import { Text } from "../../components/Text";
 
 export const About = () => {
   const [ReadMoreState, setReadMoreState] = useState(false);
   return (
     <div id="About">
-      <h1 className="mb-7 text-6xl font-semibold text-dark-text max-md:text-5xl max-sm:text-4xl">
-        About<span className="text-primary"> Me </span>
-      </h1>
+      <Heading>
+        <span className="text-dark-text"> About </span>Me
+      </Heading>
 
       <div>
         <img
           className="float-left mb-0 mr-4 mt-3 h-[300px] rounded-md border-4 border-primary max-sm:h-[200px]"
           src={profilePicture}
         />
-        <p className="text-[1.875rem] max-md:text-2xl max-md:leading-9 max-sm:text-xl">
+        <Text>
           Im <span className="font-bold text-primary">Daniel</span>, a{" "}
           <span className="font-bold text-primary"> UX/UI Designer </span> and{" "}
           <span className="font-bold text-primary">Frontend Developer </span>{" "}
@@ -31,7 +33,7 @@ export const About = () => {
             collaborate with teams, learn new skills, and contribute to building
             innovative online solutions that leave a lasting impression.
           </span>
-        </p>
+        </Text>
         <div
           onClick={() => setReadMoreState(!ReadMoreState)}
           className="inline-block text-[1.875rem] text-primary hover:cursor-pointer max-md:text-2xl max-md:leading-9 max-sm:text-xl sm:hidden">
