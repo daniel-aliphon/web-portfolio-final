@@ -3,7 +3,7 @@ export const SmallText = ({
   className,
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }) => {
   return <div className={`text-lg ${className}`}>{children}</div>;
 };

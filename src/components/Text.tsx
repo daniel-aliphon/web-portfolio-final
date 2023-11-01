@@ -3,7 +3,7 @@ export const Text = ({
   className,
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }) => {
   return (
     <p
