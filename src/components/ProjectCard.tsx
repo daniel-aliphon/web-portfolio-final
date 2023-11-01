@@ -9,12 +9,16 @@ export const ProjectCard = ({
   thumbnail,
   name,
   i,
+  demoUrl,
+  souceCodeUrl,
 }: {
   techIcons: string[];
   name: string;
   thumbnail: string;
   description: string;
   i: number;
+  demoUrl: string;
+  souceCodeUrl: string;
 }) => {
   return (
     <div
@@ -26,10 +30,10 @@ export const ProjectCard = ({
           style={{ backgroundImage: `url(${thumbnail})` }}
           className={`h-full w-full rounded-lg bg-cover bg-center bg-no-repeat p-7 outline outline-primary max-lg:h-60 max-md:h-96 max-sm:h-52`}></div>
         <div className="flex justify-center gap-7 text-primary max-md:hidden lg:hidden">
-          <Button>
+          <Button href={demoUrl}>
             View Live Demo <Eye />
           </Button>
-          <Button>
+          <Button href={souceCodeUrl}>
             View Source Code <Code2 />
           </Button>
         </div>
@@ -55,10 +59,10 @@ export const ProjectCard = ({
         </div>
 
         <div className="flex gap-7 text-primary max-lg:hidden max-md:flex max-sm:flex-col">
-          <Button>
+          <Button href={demoUrl}>
             <SmallText>View Live Demo</SmallText> <Eye />
           </Button>
-          <Button>
+          <Button href={souceCodeUrl}>
             <SmallText>View Source Code</SmallText> <Code2 />
           </Button>
         </div>

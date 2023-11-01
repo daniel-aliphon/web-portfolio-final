@@ -7,22 +7,22 @@ import { icons } from "../assets/icons";
 export const navLinks = [
   {
     href: "#About",
-    name: "About",
+    name: "ABOUT",
     alt: "About Me Nav Link",
   },
   {
     href: "#Projects",
-    name: "Projects",
+    name: "PROJECTS",
     alt: "Projects Nav Link",
   },
   {
     href: "#Resume",
-    name: "Resume",
+    name: "RESUME",
     alt: "Resume Nav Link",
   },
   {
     href: "#Contact",
-    name: "Contact",
+    name: "CONTACT",
     alt: "Contact Nav Link",
   },
 ];
@@ -117,71 +117,85 @@ export const techIcons = [
 import { projectImages } from "../assets/images";
 export const projects = [
   {
-    name: "Project 1",
+    name: "E-commerce Store-Front ",
     thumbnail: projectImages.projectImage1,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
+      "NEXTJS SHADCN Traditionally designed with a touch of experimentalism,  ",
     techIcons: [
-      icons.chromeDevToolsIcon,
-      icons.cssIcon,
       icons.htmlIcon,
-      icons.nodeIcon,
-      icons.npmIcon,
+      icons.cssIcon,
+      icons.typescriptIcon,
       icons.reactIcon,
       icons.tailwindIcon,
-      icons.typescriptIcon,
+      icons.nodeIcon,
+      icons.npmIcon,
+
+      icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
+    demoUrl: "https://daniel-aliphon.github.io/E-Commerce-Store-Front/",
+    sourceCodeUrl:
+      "https://github.com/daniel-aliphon/E-Commerce-Store-Front/tree/main/src",
   },
   {
-    name: "Project 2",
+    name: "Nike Landing Page ",
     thumbnail: projectImages.projectImage2,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
     techIcons: [
-      icons.chromeDevToolsIcon,
-      icons.cssIcon,
       icons.htmlIcon,
-      icons.nodeIcon,
-      icons.npmIcon,
+      icons.cssIcon,
+      icons.typescriptIcon,
       icons.reactIcon,
       icons.tailwindIcon,
-      icons.typescriptIcon,
+      icons.nodeIcon,
+      icons.npmIcon,
+      icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
+    demoUrl: "https://daniel-aliphon.github.io/nike-main-page-project/",
+    sourceCodeUrl:
+      "https://github.com/daniel-aliphon/nike-main-page-project/tree/main/src",
   },
   {
-    name: "Project 3",
+    name: "Personal Web Portfolio",
     thumbnail: projectImages.projectImage3,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
     techIcons: [
-      icons.chromeDevToolsIcon,
-      icons.cssIcon,
       icons.htmlIcon,
-      icons.nodeIcon,
-      icons.npmIcon,
+      icons.cssIcon,
+      icons.typescriptIcon,
       icons.reactIcon,
       icons.tailwindIcon,
-      icons.typescriptIcon,
+      icons.nodeIcon,
+      icons.npmIcon,
+      icons.figmaIcon,
+      icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
+    demoUrl: "https://daniel-aliphon.github.io/E-Commerce-Store-Front/",
+    sourceCodeUrl:
+      "https://github.com/daniel-aliphon/E-Commerce-Store-Front/tree/main/src",
   },
   {
-    name: "Project 4",
+    name: "Sticky Notes Application",
     thumbnail: projectImages.projectImage4,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
     techIcons: [
-      icons.chromeDevToolsIcon,
-      icons.cssIcon,
       icons.htmlIcon,
+      icons.cssIcon,
+      icons.typescriptIcon,
+      icons.javascriptIcon,
+      icons.reactIcon,
       icons.nodeIcon,
       icons.npmIcon,
-      icons.reactIcon,
-      icons.tailwindIcon,
-      icons.typescriptIcon,
+      icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
+    demoUrl: "https://daniel-aliphon.github.io/notes-react-app/",
+    sourceCodeUrl:
+      "https://github.com/daniel-aliphon/notes-react-app/tree/main/src",
   },
 ];

@@ -1,3 +1,9 @@
-export const SmallText = ({ children }: { children: React.ReactNode }) => {
-  return <div className="text-lg">{children}</div>;
+export const SmallText = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className: string;
+}) => {
+  return <div className={`text-lg ${className}`}>{children}</div>;
 };
