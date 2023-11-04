@@ -5,5 +5,7 @@ export const SmallText = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-  return <div className={`text-lg ${className}`}>{children}</div>;
+  return (
+    <div className={`text-lg font-secondary ${className}`}>{children}</div>
+  );
 };

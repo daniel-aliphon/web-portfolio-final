@@ -1,22 +1,22 @@
+import emailjs from "@emailjs/browser";
 import {
+  Heading,
   ArrowRight,
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  MailOpen,
   MapPin,
   Phone,
+  Mail,
+  MailOpen,
+  Linkedin,
+  Github,
+  Facebook,
+  Instagram,
 } from "lucide-react";
-import { Heading } from "../../components/Heading";
-import { Text } from "../../components/Text";
-import { SmallText } from "../../components/SmallText";
-import { CopyBtn } from "../../components/CopyBtn";
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { CopyBtn } from "../components/CopyBtn";
+import { SmallText } from "../components/SmallText";
+import { Text } from "lucide-react";
 
-export const Contact = () => {
+export const Test = () => {
   const form = useRef();
 
   const ClearForm = () => {
@@ -42,6 +42,7 @@ export const Contact = () => {
       );
     e.target.reset();
   };
+
   return (
     <div
       id="Contact"
@@ -50,7 +51,7 @@ export const Contact = () => {
         <Heading className="-mb-0">
           Contact <span className="text-dark-text">Me</span>{" "}
         </Heading>
-        <Text className="mb-3 flex items-center">
+        <Text className="flex items-center">
           Send me an Email via the contact form here{" "}
           <span className="inline-flex">
             <ArrowRight size={40} />
@@ -59,10 +60,12 @@ export const Contact = () => {
 
         <div className="flex flex-col gap-4">
           {" "}
-          <SmallText>Or get hold me manually using this info:</SmallText>
+          <SmallText className="">
+            Or get hold me manually using this info:
+          </SmallText>
           <div className="group flex justify-between">
             <p className="flex gap-2">
-              <MapPin />
+              <MapPin className="" />
               South Africa, Kwa-Zulu Natal
             </p>
             <div className="invisible cursor-pointer group-hover:visible max-md:hidden">
@@ -71,7 +74,7 @@ export const Contact = () => {
           </div>
           <div className="group flex justify-between">
             <p className="flex gap-2">
-              <Phone />
+              <Phone className="" />
               +27 71 098 8863
             </p>
             <div className="invisible cursor-pointer group-hover:visible max-md:hidden">
@@ -105,10 +108,9 @@ export const Contact = () => {
             </a>
           </div>
         </div>
-
-        {/*  */}
       </div>
 
+      {/*  */}
       <form
         className="flex h-full w-full flex-col gap-3 text-lg"
         ref={form}

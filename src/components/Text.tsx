@@ -7,7 +7,7 @@ export const Text = ({
 }) => {
   return (
     <p
-      className={`text-[1.875rem] text-dark-text max-md:text-2xl max-md:leading-9 max-sm:text-xl ${className}`}>
+      className={`text-[1.875rem] font-secondary  text-dark-text max-md:text-2xl max-md:leading-9 max-sm:text-xl ${className}`}>
       {children}
     </p>
   );
