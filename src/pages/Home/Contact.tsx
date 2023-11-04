@@ -17,30 +17,32 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const ClearForm = () => {
-    form.current.reset();
+    form.current?.reset();
   };
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_gc5x9hc",
-        "template_rnq2cf9",
-        form.current,
-        "vpDFJFL3X-XAqlg1P"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_gc5x9hc",
+          "template_rnq2cf9",
+          form.current,
+          "vpDFJFL3X-XAqlg1P"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    }
   };
   return (
     <div
