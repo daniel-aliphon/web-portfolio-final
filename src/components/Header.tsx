@@ -1,4 +1,3 @@
-import { Sun } from "lucide-react";
 import { navLinks } from "../main";
 import { MenuBtn } from "./MenuBtn";
 import { SmallText } from "./SmallText";
@@ -23,10 +22,6 @@ export const Header = () => {
                 </SmallText>
               </a>
             ))}
-
-            <button className="text-dark-text/70 hover:text-dark-text">
-              <Sun size={28} />
-            </button>
           </div>
         </div>
       </div>

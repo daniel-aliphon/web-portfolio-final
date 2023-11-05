@@ -16,14 +16,20 @@ export const navLinks = [
     alt: "Projects Nav Link",
   },
   {
+    href: "#Contact",
+    name: "CONTACT",
+    alt: "Contact Nav Link",
+  },
+  {
     href: "#Resume",
     name: "RESUME",
     alt: "Resume Nav Link",
   },
+
   {
-    href: "#Contact",
-    name: "CONTACT",
-    alt: "Contact Nav Link",
+    href: "#Blog",
+    name: "BLOG",
+    alt: "Blog post Nav Link",
   },
 ];
 

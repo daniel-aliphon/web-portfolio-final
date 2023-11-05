@@ -16,7 +16,15 @@ import { CopyBtn } from "../../components/CopyBtn";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export const Contact = () => {
+export const Contact = ({
+  visibility,
+  handleVisibility,
+  handleError,
+}: {
+  visibility: boolean;
+  handleVisibility: any;
+  handleError: any;
+}) => {
   const form = useRef<HTMLFormElement>(null);
 
   const ClearForm = () => {
@@ -36,9 +44,12 @@ export const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
+            handleVisibility(!visibility);
           },
           (error) => {
             console.log(error.text);
+            handleVisibility(!visibility);
+            handleError();
           }
         );
       e.target.reset();
@@ -93,10 +104,14 @@ export const Contact = () => {
             </div>
           </div>
           <div className="flex justify-around border-t pt-4">
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/daniel-aliphon/"
+              target="_blank">
               <Linkedin size={30} />
             </a>
-            <a href="">
+            <a
+              href="https://github.com/daniel-aliphon"
+              target="_blank">
               <Github size={30} />
             </a>
             <a href="">
@@ -120,14 +135,14 @@ export const Contact = () => {
             className="rounded-lg bg-dark-foreground p-2"
             type="text"
             name="from_firstName"
-            placeholder="First Name:"
+            placeholder="First Name"
             required
           />
           <input
             className="rounded-lg bg-dark-foreground p-2"
             type="text"
             name="from_lastName"
-            placeholder="Last Name"
+            placeholder="Last Name (opional)"
           />
           <input
             className="rounded-lg bg-dark-foreground p-2"
@@ -147,7 +162,7 @@ export const Contact = () => {
         <textarea
           className="w-full resize-none rounded-lg bg-dark-foreground p-2"
           name="message"
-          placeholder="Message:"
+          placeholder="Message"
           cols={30}
           rows={10}
           required

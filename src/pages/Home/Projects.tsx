@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div
       id="Projects"
-      className="space-y-20">
+      className="space-y-40">
       <Heading>Projects</Heading>
       {projects.map((project, i) => (
         <ProjectCard

@@ -7,12 +7,23 @@ import { Tech } from "./Home/Tech";
 import { Footer } from "./Home/Footer";
 import { Projects } from "./Home/Projects";
 import { Contact } from "./Home/Contact";
+import { Notification } from "../components/Notification";
+import { SmallText } from "../components/SmallText";
 
 export const Home = () => {
   //
 
   window.onscroll = () => {
     scrollFunction();
+  };
+  const [errorNotification, setErrorNotification] = useState(false);
+  const handleError = () => {
+    setErrorNotification(!errorNotification);
+  };
+
+  const [notificationVisible, setNotificationVisible] = useState(false);
+  const notification = (visibility: boolean) => {
+    setNotificationVisible(visibility);
   };
 
   const [btnVisibility, setBtnVisibility] = useState(false);
@@ -42,6 +53,23 @@ export const Home = () => {
       <Hero />
       <div className="relative z-10 bg-dark-background">
         <Header />
+        <Notification
+          handleVisibility={notification}
+          visibility={notificationVisible}>
+          {errorNotification ? (
+            <>
+              <SmallText>Something went Wrong!</SmallText>
+              <p>Please try again.</p>
+            </>
+          ) : (
+            <>
+              <SmallText className="underline underline-offset-4">
+                Message sent!
+              </SmallText>
+              <p>Please check your email for confirmation.</p>
+            </>
+          )}
+        </Notification>
 
         <button
           onClick={() => topFunction()}
@@ -58,7 +86,11 @@ export const Home = () => {
 
           <Projects />
 
-          <Contact />
+          <Contact
+            handleError={handleError}
+            handleVisibility={notification}
+            visibility={notificationVisible}
+          />
         </div>
 
         <Footer />

@@ -17,7 +17,6 @@ import {
 } from "../assets/icons";
 
 export const FloatingIcons = () => {
-  // Rest of the code...
   const iconsRow1 = [
     {
       name: "html icon",
