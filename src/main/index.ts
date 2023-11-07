@@ -126,16 +126,16 @@ export const projects = [
     name: "E-commerce Store-Front ",
     thumbnail: projectImages.projectImage1,
     description:
-      "NEXTJS SHADCN Traditionally designed with a touch of experimentalism,  ",
+      "shadcn, carousels api, creativeness, experimeental, e-commerce, nextjs theme selection, store front, semi-modern design",
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
       icons.typescriptIcon,
+      icons.shadcnIcon,
       icons.reactIcon,
+      icons.nextjsIcon,
       icons.tailwindIcon,
       icons.nodeIcon,
-      icons.npmIcon,
-
       icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
@@ -147,7 +147,7 @@ export const projects = [
     name: "Nike Landing Page ",
     thumbnail: projectImages.projectImage2,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
+      "colorful, landing page, copy brand, personal fabourite, ui/ux design, customisation, responsive, local storage theme",
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
@@ -167,7 +167,7 @@ export const projects = [
     name: "Personal Web Portfolio",
     thumbnail: projectImages.projectImage3,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
+      "5th try, hero to body transition, floating icons, index.ts pseudo database, keyframes, animation, contact form, emailjs api, custom components with ts, ts config, ",
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
@@ -188,7 +188,7 @@ export const projects = [
     name: "Sticky Notes Application",
     thumbnail: projectImages.projectImage4,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempore beatae, facere cumque perspiciatis saepe, quisquam cupiditate nostrum enim aut quia, eaque placeat! Vel fugit sunt atque, rem numquam deserunt",
+      "js/tech focused opposed to ui/ux, local storage, search bar, filter, customisation, responsive layout",
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,

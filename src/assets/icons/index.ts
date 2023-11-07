@@ -13,6 +13,8 @@ import viteIcon from "./vitejs.svg";
 import figmaIcon from "./figma.svg";
 import vsCodeIcon from "./vs-code.svg";
 import chromeDevToolsIcon from "./chromeDevTools.svg";
+import shadcnIcon from "./shadcn.svg";
+import nextjsIcon from "./nextjs.svg";
 
 const icons = {
   bootstrapIcon,
@@ -30,6 +32,8 @@ const icons = {
   figmaIcon,
   vsCodeIcon,
   chromeDevToolsIcon,
+  shadcnIcon,
+  nextjsIcon,
 };
 
 export {
@@ -49,4 +53,6 @@ export {
   figmaIcon,
   vsCodeIcon,
   chromeDevToolsIcon,
+  shadcnIcon,
+  nextjsIcon,
 };
