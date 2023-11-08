@@ -4,7 +4,9 @@ export const Tech = () => {
   return (
     <>
       <div>
-        <Heading>Tech</Heading>
+        <Heading>
+          Tech <span className="text-dark-text">&</span> Tools
+        </Heading>
 
         <div className="maxlg grid grid-cols-5 gap-[5vw] max-sm:grid-cols-3">
           {techIcons.map((icon) => (

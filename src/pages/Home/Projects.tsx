@@ -18,6 +18,7 @@ export const Projects = () => {
           i={i}
           demoUrl={project.demoUrl}
           souceCodeUrl={project.sourceCodeUrl}
+          excludesViewBtn={project.excludeViewBtn}
         />
       ))}
     </div>

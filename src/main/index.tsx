@@ -25,12 +25,6 @@ export const navLinks = [
     name: "RESUME",
     alt: "Resume Nav Link",
   },
-
-  {
-    href: "#Blog",
-    name: "BLOG",
-    alt: "Blog post Nav Link",
-  },
 ];
 
 // TECH
@@ -121,12 +115,24 @@ export const techIcons = [
 // PROJECTS
 
 import { projectImages } from "../assets/images";
+import { SmallText } from "../components/SmallText";
+import { Underline } from "../components/Underline";
 export const projects = [
   {
     name: "E-commerce Store-Front ",
     thumbnail: projectImages.projectImage1,
-    description:
-      "shadcn, carousels api, creativeness, experimeental, e-commerce, nextjs theme selection, store front, semi-modern design",
+    description: (
+      <SmallText>
+        A <Underline> UI-focused </Underline>
+        unbranded store-front created using mainly
+        <Underline> ReactJS </Underline> and
+        <Underline> Shadcn UI </Underline>. Minor NextJS usage for the
+        dark/light theme handling. Carousels and sliders are a huge
+        characteritic of this project implemented via
+        <Underline> SplideJS </Underline> (slider component library).
+      </SmallText>
+    ),
+    // shadcn, carousels api, creativeness, experimeental, e-commerce, nextjs theme selection, store front, semi-modern design layouts ui (a collection of reusable and customizable components built with RadixUI on-top of TailwindCSS)
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
@@ -146,8 +152,16 @@ export const projects = [
   {
     name: "Nike Landing Page ",
     thumbnail: projectImages.projectImage2,
-    description:
-      "colorful, landing page, copy brand, personal fabourite, ui/ux design, customisation, responsive, local storage theme",
+    description: (
+      <SmallText>
+        A <Underline>UX focused</Underline> landing page of the popular (and my
+        favourite) footwear brand - Nike. Created mainly using standard{" "}
+        <Underline>ReactJS</Underline> and custom components styled via{" "}
+        <Underline>TailwindCSS</Underline>. Color theme choice is stored locally
+        (color-theme data persists even through cache clearing).
+      </SmallText>
+    ),
+    // colorful, landing page, copy brand, personal fabourite, ui/ux design, customisation, responsive, local storage theme
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
@@ -166,8 +180,16 @@ export const projects = [
   {
     name: "Personal Web Portfolio",
     thumbnail: projectImages.projectImage3,
-    description:
-      "5th try, hero to body transition, floating icons, index.ts pseudo database, keyframes, animation, contact form, emailjs api, custom components with ts, ts config, ",
+    description: (
+      <SmallText>
+        My personal project/web-dev portfolio created from scratch using mainly{" "}
+        <Underline>ReactJS</Underline> and custom components styled via{" "}
+        <Underline>TailwindCSS</Underline>. Contact form functions using{" "}
+        <Underline>EmailJS - API</Underline> , all component data is stored in
+        an internal pseudo database (main/index.ts).
+      </SmallText>
+    ),
+    // 5th try, hero to body transition, floating icons, index.ts pseudo database, keyframes, animation, contact form, emailjs api, custom components with ts, ts config,
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
@@ -183,12 +205,23 @@ export const projects = [
     demoUrl: "https://daniel-aliphon.github.io/E-Commerce-Store-Front/",
     sourceCodeUrl:
       "https://github.com/daniel-aliphon/E-Commerce-Store-Front/tree/main/src",
+    excludeViewBtn: true,
   },
   {
     name: "Sticky Notes Application",
     thumbnail: projectImages.projectImage4,
-    description:
-      "js/tech focused opposed to ui/ux, local storage, search bar, filter, customisation, responsive layout",
+    description: (
+      <SmallText>
+        A simplistic 'sticky notes' application created from scratch using
+        mainly <Underline> ReactJS</Underline>, styled via{" "}
+        <Underline>standard CSS</Underline> and{" "}
+        <Underline>TailwindCSS</Underline>. Much more{" "}
+        <Underline>javascript heavy</Underline> as compared to my other mostly
+        design focused projects. Use of <Underline>React Hooks</Underline> and{" "}
+        <Underline> prop drilling</Underline> is very prominent in this project.
+      </SmallText>
+    ),
+    // js/tech focused opposed to ui/ux, local storage, search bar, filter, customisation, responsive layout
     techIcons: [
       icons.htmlIcon,
       icons.cssIcon,
