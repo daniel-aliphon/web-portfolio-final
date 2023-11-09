@@ -47,8 +47,8 @@ export default {
             opacity: "0.8",
           },
           "100%": {
-            transform: "translateY(-120vh) rotate(720deg)",
-            opacity: "0",
+            transform: "translateY(-125vh) rotate(720deg)",
+            opacity: "0.3",
           },
         },
 
@@ -58,8 +58,8 @@ export default {
             opacity: "0.8",
           },
           "100%": {
-            transform: "translateY(-120vh) rotate(-720deg)",
-            opacity: "0",
+            transform: "translateY(-125vh) rotate(-720deg)",
+            opacity: "0.3",
           },
         },
 

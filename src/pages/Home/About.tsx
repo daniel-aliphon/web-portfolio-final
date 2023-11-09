@@ -6,11 +6,14 @@ import { Text } from "../../components/Text";
 export const About = () => {
   const [ReadMoreState, setReadMoreState] = useState(false);
   return (
-    <div id="About">
+    <div
+      id="About"
+      className="radd relative">
+      {" "}
+      <div className="absolute z-[-1] h-[130%] w-[150%] rounded-full bg-[radial-gradient(#1e2840,#111827,transparent)] opacity-50 content-['']"></div>
       <Heading>
         <span className="text-dark-text"> About </span>Me
       </Heading>
-
       <div>
         <img
           className="float-left mb-0 mr-4 mt-3 h-[300px] rounded-md border-4 border-primary max-sm:h-[200px]"

@@ -15,6 +15,7 @@ import { SmallText } from "../../components/SmallText";
 import { CopyBtn } from "../../components/CopyBtn";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Underline } from "../../components/Underline";
 
 export const Contact = ({
   visibility,
@@ -64,9 +65,12 @@ export const Contact = ({
           Contact <span className="text-dark-text">Me</span>{" "}
         </Heading>
         <Text className="mb-3 flex items-center">
-          Send me an Email via the contact form here{" "}
+          <Underline>Send me an Email via the contact form here</Underline>{" "}
           <span className="inline-flex">
-            <ArrowRight size={40} />
+            <ArrowRight
+              className="text-primary"
+              size={50}
+            />
           </span>
         </Text>
 
@@ -103,21 +107,27 @@ export const Contact = ({
               <CopyBtn copyText="daniel.aliphon.juan@gmail.com" />
             </div>
           </div>
-          <div className="flex justify-around border-t pt-4">
+          <div className="flex justify-between border-t pt-4">
             <a
+              className="rounded-full bg-dark-foreground p-3"
               href="https://www.linkedin.com/in/daniel-aliphon/"
               target="_blank">
               <Linkedin size={30} />
             </a>
             <a
+              className="rounded-full bg-dark-foreground p-3"
               href="https://github.com/daniel-aliphon"
               target="_blank">
               <Github size={30} />
             </a>
-            <a href="">
+            <a
+              className="rounded-full bg-dark-foreground p-3"
+              href="">
               <Facebook size={30} />
             </a>
-            <a href="">
+            <a
+              className="rounded-full bg-dark-foreground p-3"
+              href="">
               <Instagram size={30} />
             </a>
           </div>

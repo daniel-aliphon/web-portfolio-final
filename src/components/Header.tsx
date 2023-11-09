@@ -16,7 +16,8 @@ export const Header = () => {
             {navLinks.map((navLink) => (
               <a
                 key={navLink.name}
-                href={navLink.href}>
+                href={navLink.href}
+                target={navLink.name === "RESUME" ? "_blank" : ""}>
                 <SmallText className="bg-primary px-3 py-2 font-semibold text-dark-text/70 hover:text-dark-text">
                   {navLink.name}
                 </SmallText>

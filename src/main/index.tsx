@@ -21,7 +21,7 @@ export const navLinks = [
     alt: "Contact Nav Link",
   },
   {
-    href: "#Resume",
+    href: "https://drive.google.com/file/d/1MZmHHCLELn9gSLUqXtX_5jz58kf5L2-p/view?usp=drive_link",
     name: "RESUME",
     alt: "Resume Nav Link",
   },

@@ -1,4 +1,5 @@
 import { Heading } from "../../components/Heading";
+import { SmallText } from "../../components/SmallText";
 import { techIcons } from "../../main"; //
 export const Tech = () => {
   return (
@@ -7,6 +8,7 @@ export const Tech = () => {
         <Heading>
           Tech <span className="text-dark-text">&</span> Tools
         </Heading>
+        <SmallText>description</SmallText>
 
         <div className="maxlg grid grid-cols-5 gap-[5vw] max-sm:grid-cols-3">
           {techIcons.map((icon) => (
