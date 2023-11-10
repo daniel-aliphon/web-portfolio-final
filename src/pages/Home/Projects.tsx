@@ -7,20 +7,23 @@ import { Underline } from "../../components/Underline";
 
 export const Projects = () => {
   return (
-    <div>
+    <div
+      id="Projects"
+      className="scroll-pt-96">
       <Heading>Projects</Heading>
-      <SmallText className="mb-7">
-        <SmallText>View my most esteemed projects below. </SmallText>
+      <SmallText className="mb-12">
+        Presented below are projects I've undertaken, serving as tangible
+        demonstrations of my competencies and overall experience in design & web
+        development.{" "}
         <a
           href="https://github.com/daniel-aliphon?tab=repositories"
           target="_blank">
           <Underline>See All Project Repositories in Github</Underline>
-          <ArrowRight className="ml-4 inline" />
+          <ArrowRight className="inline" />
         </a>
       </SmallText>
-      <div
-        id="Projects"
-        className="flex flex-col gap-40">
+
+      <div className="flex flex-col gap-40">
         {projects.map((project, i) => (
           <ProjectCard
             key={project.name}

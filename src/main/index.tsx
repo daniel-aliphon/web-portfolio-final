@@ -21,7 +21,7 @@ export const navLinks = [
     alt: "Contact Nav Link",
   },
   {
-    href: "https://drive.google.com/file/d/1MZmHHCLELn9gSLUqXtX_5jz58kf5L2-p/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/11WuhcmSSihiheGmbN-t9va-UCtRJNJ4N/view?usp=drive_link",
     name: "RESUME",
     alt: "Resume Nav Link",
   },
@@ -202,9 +202,8 @@ export const projects = [
       icons.chromeDevToolsIcon,
       icons.viteIcon,
     ],
-    demoUrl: "https://daniel-aliphon.github.io/E-Commerce-Store-Front/",
-    sourceCodeUrl:
-      "https://github.com/daniel-aliphon/E-Commerce-Store-Front/tree/main/src",
+    demoUrl: "",
+    sourceCodeUrl: "https://github.com/daniel-aliphon/web-portfolio-final",
     excludeViewBtn: true,
   },
   {

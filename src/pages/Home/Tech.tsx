@@ -8,7 +8,11 @@ export const Tech = () => {
         <Heading>
           Tech <span className="text-dark-text">&</span> Tools
         </Heading>
-        <SmallText>description</SmallText>
+        <SmallText className="mb-12">
+          A few of the programming languages, software, libraries, frameworks,
+          and technologies that I have extensively utilized and become
+          proficient in using.
+        </SmallText>
 
         <div className="maxlg grid grid-cols-5 gap-[5vw] max-sm:grid-cols-3">
           {techIcons.map((icon) => (

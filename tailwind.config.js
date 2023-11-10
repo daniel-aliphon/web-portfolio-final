@@ -44,10 +44,10 @@ export default {
         "floating-clockwise": {
           "0% ": {
             transform: "translateY(0) rotate(0deg)",
-            opacity: "0.8",
+            opacity: "0.6",
           },
           "100%": {
-            transform: "translateY(-125vh) rotate(720deg)",
+            transform: "translateY(-130vh) rotate(720deg)",
             opacity: "0.3",
           },
         },
@@ -55,10 +55,10 @@ export default {
         "floating-anti_clockwise": {
           "0% ": {
             transform: "translateY(0) rotate(0deg)",
-            opacity: "0.8",
+            opacity: "0.6",
           },
           "100%": {
-            transform: "translateY(-125vh) rotate(-720deg)",
+            transform: "translateY(-130vh) rotate(-720deg)",
             opacity: "0.3",
           },
         },

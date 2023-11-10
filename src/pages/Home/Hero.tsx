@@ -24,7 +24,7 @@ export const Hero = () => {
             <div className="flex justify-center gap-28 font-secondary font-medium max-sm:flex-col max-sm:gap-0">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1MZmHHCLELn9gSLUqXtX_5jz58kf5L2-p/view">
+                href="https://drive.google.com/file/d/11WuhcmSSihiheGmbN-t9va-UCtRJNJ4N/view?usp=drive_link">
                 <button
                   className={`flex scale-100 gap-2 rounded-full bg-primary p-4 text-center text-4xl leading-normal transition-all hover:scale-105 max-sm:scale-[0.65] hover:max-sm:scale-[0.70]`}>
                   Resume
