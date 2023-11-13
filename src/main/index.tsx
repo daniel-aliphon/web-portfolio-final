@@ -21,7 +21,7 @@ export const navLinks = [
     alt: "Contact Nav Link",
   },
   {
-    href: "https://drive.google.com/file/d/11WuhcmSSihiheGmbN-t9va-UCtRJNJ4N/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/1ynLsNnVaKPlu0s6PAWl1OyThTN-DjTJs/view?usp=drive_link",
     name: "RESUME",
     alt: "Resume Nav Link",
   },
@@ -184,9 +184,9 @@ export const projects = [
       <SmallText>
         My personal project/web-dev portfolio created from scratch using mainly{" "}
         <Underline>ReactJS</Underline> and custom components styled via{" "}
-        <Underline>TailwindCSS</Underline>. Contact form functions using{" "}
-        <Underline>EmailJS - API</Underline> , all component data is stored in
-        an internal pseudo database (main/index.ts).
+        <Underline>Tailwind-CSS</Underline>. Contact form functions using{" "}
+        <Underline>EmailJS - API</Underline> , pseudo internal-CMS
+        (main/index.ts).
       </SmallText>
     ),
     // 5th try, hero to body transition, floating icons, index.ts pseudo database, keyframes, animation, contact form, emailjs api, custom components with ts, ts config,
